@@ -48,10 +48,13 @@ function CounterCard({ endValue, suffix = '', label, icon }: CounterProps) {
       <div className="w-10 h-10 mx-auto rounded-xl bg-gradient-to-tr from-primary-blue/20 to-accent-cyan/20 flex items-center justify-center text-accent-cyan mb-3">
         {icon}
       </div>
-      <p className="text-3xl font-bold font-display tracking-tight bg-gradient-to-r from-white via-slate-100 to-accent-cyan bg-clip-text text-transparent">
+      <h3 className="text-[10px] font-mono tracking-widest uppercase opacity-60 text-accent-cyan italic mb-1.5">
+        Metrics Node
+      </h3>
+      <p className="text-3xl font-bold font-display tracking-tight bg-gradient-to-r from-white via-slate-100 to-accent-cyan bg-clip-text text-transparent font-bold italic">
         {count}{suffix}
       </p>
-      <p className="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wide">
+      <p className="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wide font-bold italic">
         {label}
       </p>
     </motion.div>
@@ -94,7 +97,7 @@ export default function About({ darkMode }: AboutProps) {
               My Journey as Md. Akib Uddin Satej
             </h3>
             
-            <p className={`leading-relaxed text-sm sm:text-base ${
+            <p className={`leading-relaxed text-sm sm:text-base font-bold italic ${
               darkMode ? 'text-slate-300' : 'text-slate-600'
             }`}>
               I am a meticulous, full-stack software engineer with an immutable passion for structuring clean, fluid architectures. Exploring the depths of Node networks, React client caches, and lightweight edge environments, I write software that is not only high-performing but also delightful to maintain.
